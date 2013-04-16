@@ -1,6 +1,7 @@
-
-
 #======================================
+#
+# == Class: puppet::params
+#
 # This class manages the Puppet parameters
 #--------------------------------------
 class puppet::params {

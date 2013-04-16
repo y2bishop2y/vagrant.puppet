@@ -4,6 +4,30 @@
 # This class installs and manages the Puppet server daemon.
 #
 # === Parameters
+#
+# [*ensure*]
+#  What state the package should be in. Defaults to +latest". valid values are
+#  +present+ (also called +installed+), +absent+, +purged+, +held+, +latest+,
+#  or a specific version number.
+#
+# [*package_name*]
+#  The name of the package on the relevant distribution. Default is set by
+#  Class['puppet::params'].
+#
+# ===  Actions
+#
+# - Install Puppet server package
+# - Install puppet-lint gem
+# - Configure puppet to autosign puppet client certificates requests
+# - Configure puppet to user nodes.pp and modules from /vargrant directory
+# - Ensure puppet-master daemon is running
+#
+# === Requires
+#
+# === Sample Usage
+#
+# class { 'puppet::server' }
+
 
 #--------------------------------------
 

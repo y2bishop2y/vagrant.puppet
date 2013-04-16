@@ -7,9 +7,9 @@ domain = "example.com"
 
 puppet_nodes = 
   [
-   {:hostname => 'master',  :ip => '192.168.2.10', :box => 'precise64', :fwdhost => 8140, :fwdguest => 8140, :ram => 512},
-   {:hostname => 'client1', :ip => '192.168.2.11', :box => 'precise64'},
-   {:hostname => 'client2', :ip => '192.168.2.11', :box => 'precise64'},
+   {:hostname => 'master',   :ip => '192.168.2.10', :box => 'precise64', :fwdhost => 8140, :fwdguest => 8140, :ram => 512},
+   {:hostname => 'client10', :ip => '192.168.2.11', :box => 'precise64'},
+   {:hostname => 'client20', :ip => '192.168.2.12', :box => 'precise64'},
 ]
 
 

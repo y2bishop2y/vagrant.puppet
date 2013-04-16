@@ -12,9 +12,9 @@ class { 'vagrant' : stage => 'pre' }
 
 class { 'puppet': }
 class { 'networking': }
+# class { 'emacs': }
 
+if $hostname == 'master' {
 
-# if $hostname == 'puppet' {
-#
-#  class { 'puppet::server': }
-#}
+  class { 'puppet::server': }
+}

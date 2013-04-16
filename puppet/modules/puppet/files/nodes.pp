@@ -4,12 +4,12 @@
 
 # Self manage the puppet master server
 
-node 'puppet' { }
+node 'master' { }
 
 #### CLIENTS
 
-node 'client1' {
+node 'client10' {
   class { 'helloworld' }
 }
 
-node 'client2'  { }
+node 'client20'  { }
