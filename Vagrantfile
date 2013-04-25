@@ -1,9 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-
 domain = "example.com"
-
 
 puppet_nodes = 
   [
@@ -11,7 +9,6 @@ puppet_nodes =
    {:hostname => 'client10', :ip => '192.168.2.11', :box => 'precise64'},
    {:hostname => 'client20', :ip => '192.168.2.12', :box => 'precise64'},
 ]
-
 
 
 Vagrant.configure("2") do |config|
